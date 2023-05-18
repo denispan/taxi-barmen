@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from "./Form.module.scss";
+import cx from 'classnames';
+
 
 const Form = () => {
 
@@ -10,7 +12,7 @@ const Form = () => {
       <input type="text" id="input2" placeholder={"Адрес"} readOnly={true}/>
       <div className={styles.form__btns}>
         <button className={styles.btn} type="submit">Отправить запрос</button>
-        <button className={styles.btn} type="reset">Очистить</button>
+        <button className={cx(styles.btn, styles.btn_reset)} type="reset">Очистить</button>
       </div>
     </form>
   )
