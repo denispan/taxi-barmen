@@ -66,10 +66,12 @@ export const useYandexMap = () => {
           maxWidth: 190
         }
       });
+
       // Объявляем обработчик для кнопки.
       getPointsButton.events.add('click', function() {
-        $("#input1").val(control.routePanel.state.get('from'));
-        $("#input2").val(control.routePanel.state.get('to'));
+        // $("#input1").val(control.routePanel.state.get('from'));
+        $("#input1").val(control.routePanel.state.get('to'));
+        // todo: найти координаты и по ним определять хинт балуна
 
       });
       myMap.controls.add(getPointsButton);
@@ -81,7 +83,6 @@ export const useYandexMap = () => {
           POLYGONS.POLYGON_250,
         ],
         {
-
           hintContent: "250 руб.",
         },
         {

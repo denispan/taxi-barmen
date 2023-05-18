@@ -9,7 +9,8 @@ const Form = () => {
     <form className={styles.form}>
       <input type="text" placeholder={"Имя"} />
       <input type="tel" placeholder={"Телефон"} />
-      <input type="text" id="input2" placeholder={"Адрес"} readOnly={true}/>
+      <input type="text" id="input1" placeholder={"Адрес"} readOnly={true}/>
+      <input type="text" id="input2" placeholder={"Цена поездки"} />
       <div className={styles.form__btns}>
         <button className={styles.btn} type="submit">Отправить запрос</button>
         <button className={cx(styles.btn, styles.btn_reset)} type="reset">Очистить</button>
